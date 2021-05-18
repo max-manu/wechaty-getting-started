@@ -51,7 +51,7 @@ var sent;
    }
  })
  
- client.login("ODQzODY1ODg2MDU3MDM3ODM0.YKKFWQ.CQu5N3JLSXKZ2l2U9OPZRI-d8No")
+ client.login("TOKEN")
 
 function onScan (qrcode, status) {
   if (status === ScanStatus.Waiting || status === ScanStatus.Timeout) {
@@ -82,7 +82,7 @@ async function onMessage (msg) {
   // if (msg.talker().name()==='wechat'){
   //   try{
   //     if (sent!=msg.text()){
-  //     var channel=await client.channels.cache.get('843868192010403903');
+  //     var channel=await client.channels.cache.get('room id');
   //     channel.send(msg.text());
   //     sent=msg.text();
   //     }
@@ -94,7 +94,7 @@ async function onMessage (msg) {
 if (msg.talker().name()==='Lekhit Borole'){
   try{
     if (sent!=msg.text()){
-    var channel=await client.channels.cache.get('844079105578369064');
+    var channel=await client.channels.cache.get('room id');
     channel.send(msg.text());
     sent=msg.text();
     }
@@ -104,7 +104,7 @@ if (msg.talker().name()==='Lekhit Borole'){
 if (msg.talker().name()==='//Infant Programmers'){
   try{
     if (sent!=msg.text()){
-    var channel=await client.channels.cache.get('844079105578369064');
+    var channel=await client.channels.cache.get('room id');
     channel.send(msg.text());
     sent=msg.text();
     }
@@ -114,12 +114,12 @@ if (msg.talker().name()==='//Infant Programmers'){
 
   if (msg.text() === '!yes sure') {
     // try{
-    //   var channel=await client.channels.cache.get('843868192010403903');
+    //   var channel=await client.channels.cache.get('room id');
     //   channel.send('Hello there!');
 
     // }catch(error){console.error(error);}
     try{
-      var channel=await client.channels.cache.get('844079105578369064');
+      var channel=await client.channels.cache.get('room id');
       channel.send('Hello there_from whatsapp!');
 
     }catch(error){console.error(error);}

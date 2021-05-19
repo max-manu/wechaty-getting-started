@@ -21,6 +21,7 @@
  * 
  * discord
  */
+var token='';//insert discord token here
 var sent='';
  var contact;//contact var for whatsapp
  const Discord = require("discord.js")
@@ -52,7 +53,7 @@ var sent='';
    }
  })
  
- client.login('ODQzODY1ODg2MDU3MDM3ODM0.YKKFWQ.KUT0ECAN788E89a8vgci7zeATyE')
+ client.login(token)
  
 
 
@@ -60,14 +61,7 @@ var sent='';
  * 
  * 
  */
- var whatsapp_user={'8894534592':'Akshat','8757187873':"Shubham Maurya",'7905037729':
-'Lakki :Adarsh Singh',
-'6239266094':
-'Aryan',
-'8350943307':
-'Yash Aggarwal',
-'9404690659':'Lekhit',
-'9503306728':'Bot'};
+ var whatsapp_user={};
 
 
 var whatsapp_channel='wechat';
